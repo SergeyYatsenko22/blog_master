@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
 {% load static %}
+
+{% block title %}
+Sensive Blog {{ post.title }} - Blog Details
+{% endblock %}
+
 {% block content %}
-<title>Sensive Blog {{ post.title }} - Blog Details</title>
-<body>
+
   <!--================ Hero sm Banner start =================-->
-  <section class="mb-30px">
+<section class="mb-30px">
     <div class="container">
       <div class="hero-banner hero-banner--sm">
         <div class="hero-banner__content">
@@ -112,5 +116,5 @@
   </section>
   <!--================ End Blog Post Area =================-->
 
-</body>
+
 {% endblock %}
